@@ -1,0 +1,10 @@
+names:
+- motorcycle
+- bicycle
+- e-scooter
+- scooter
+nc: 4
+path: C:\Users\Govin\OneDrive\Desktop\final-iot\objective_3_footpath\datasets\merged_twowheeler
+test: images/test
+train: images/train
+val: images/val

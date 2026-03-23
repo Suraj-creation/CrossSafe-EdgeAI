@@ -1,0 +1,8 @@
+{
+  "pixels_per_metre": 47,
+  "camera_fps": 15,
+  "calibration_date": "2025-01-01",
+  "reference_object_length_m": 1.0,
+  "reference_object_pixel_length": 47,
+  "notes": "Calibrated with 1m marker tape on footpath surface at camera midpoint"
+}

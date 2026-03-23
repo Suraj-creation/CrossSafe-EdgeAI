@@ -1,0 +1,49 @@
+# =============================================================================
+# Objective 3 — Training Machine Dependencies
+# GPU required: NVIDIA GPU with >= 8GB VRAM, CUDA 11.8+
+# Python 3.10 recommended
+# =============================================================================
+
+# Core ML
+ultralytics>=8.1.0
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# Computer vision & augmentation
+opencv-python-headless>=4.8.0
+albumentations>=1.3.1
+Pillow>=10.0.0
+scikit-image>=0.21.0
+
+# Dataset management
+roboflow>=1.1.0
+fiftyone>=0.23.0
+kaggle>=1.5.16
+pandas>=2.1.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# OCR training
+paddlepaddle-gpu>=2.5.0
+paddleocr>=2.7.0
+paddle2onnx>=1.1.0
+
+# Model conversion & export
+onnx>=1.14.0
+onnxruntime-gpu>=1.16.0
+onnx-tf>=1.10.0
+tf2onnx>=1.15.0
+tensorflow>=2.12.0
+
+# Edge deployment tools
+paho-mqtt>=1.6.1
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# Utilities
+tqdm>=4.66.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+PyYAML>=6.0.1
+requests>=2.31.0

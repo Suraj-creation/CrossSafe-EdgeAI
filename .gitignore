@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+.env
+.env.*
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Objective 3: training runs & caches ---
+objective_3_footpath/runs/
+objective_3_footpath/**/*.cache
+
+# --- Runtime outputs ---
+objective_3_footpath/evidence/
+objective_3_footpath/logs/*.log
+
+# --- Large generated image datasets (regenerate locally; avoids GitHub size limits) ---
+# See README: scripts/prepare_training_data.py, scripts/generate_synthetic_plates.py
+objective_3_footpath/datasets/synthetic_plates/images/
+objective_3_footpath/datasets/merged_twowheeler/images/
+objective_3_footpath/datasets/merged_lp_localise/images/
+objective_3_footpath/datasets/merged_lp_localise/labels/
+objective_3_footpath/datasets/merged_twowheeler/labels/
+
+# --- Jupyter / tooling ---
+.ipynb_checkpoints/
+
+# Add local test videos yourself if needed (uncomment to ignore):
+# *.mp4
+# *.avi

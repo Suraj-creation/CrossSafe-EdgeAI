@@ -1,0 +1,43 @@
+# /etc/systemd/system/pedestrian_ai_obj3.service
+#
+# Objective 3 — Footpath Violation Detection & Auto-Enforcement
+# Auto-start on boot, auto-restart on crash
+#
+# Install:  sudo cp pedestrian_ai_obj3.service /etc/systemd/system/
+#           sudo systemctl daemon-reload
+#           sudo systemctl enable pedestrian_ai_obj3
+# Start:   sudo systemctl start pedestrian_ai_obj3
+# Status:  sudo systemctl status pedestrian_ai_obj3
+# Logs:    journalctl -u pedestrian_ai_obj3 -f
+
+[Unit]
+Description=Footpath Violation Detection - AI Enforcement System (Obj 3)
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/objective_3_footpath
+ExecStart=/usr/bin/python3 /home/pi/objective_3_footpath/main.py --source rtsp://192.168.1.100/stream1
+Restart=always
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=10
+
+# Environment
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONPATH=/home/pi/objective_3_footpath
+
+# Resource limits
+MemoryMax=2G
+CPUQuota=90%
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=obj3_footpath
+
+[Install]
+WantedBy=multi-user.target

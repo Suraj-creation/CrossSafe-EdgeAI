@@ -1,0 +1,7 @@
+names:
+- licence_plate
+nc: 1
+path: C:\Users\Govin\OneDrive\Desktop\final-iot\objective_3_footpath\datasets\merged_lp_localise
+test: images/test
+train: images/train
+val: images/val

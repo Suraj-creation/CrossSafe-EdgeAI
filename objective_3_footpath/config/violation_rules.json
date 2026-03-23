@@ -1,0 +1,22 @@
+{
+  "detection_confidence_threshold": 0.45,
+  "nms_iou_threshold": 0.50,
+  "min_bbox_area_px": 1500,
+  "speed_threshold_kmph": 5.0,
+  "roi_overlap_threshold": 0.35,
+  "ocr_confidence_threshold": 0.65,
+  "cooldown_seconds": 60,
+  "skip_frames": 2,
+  "violation_type": "FOOTPATH_ENCROACHMENT",
+  "section_applied": "Section 177 MV Act / Section 111 BMTC",
+  "fine_amount_inr": 500,
+  "class_names": {
+    "0": "motorcycle",
+    "1": "bicycle",
+    "2": "e-scooter",
+    "3": "scooter"
+  },
+  "lp_detection_confidence": 0.30,
+  "ocr_voting_runs": 3,
+  "max_track_history": 15
+}

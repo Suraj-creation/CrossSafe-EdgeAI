@@ -1,0 +1,16 @@
+# =============================================================================
+# Objective 3 — Edge Device (Raspberry Pi 4 / Jetson Nano) Runtime Dependencies
+# No training — inference only
+# =============================================================================
+
+ultralytics>=8.1.0
+tflite-runtime>=2.14.0
+opencv-python-headless>=4.8.0
+numpy>=1.24.0
+paddleocr>=2.7.0
+onnxruntime>=1.16.0
+paho-mqtt>=1.6.1
+Pillow>=10.0.0
+PyYAML>=6.0.1
+RPi.GPIO>=0.7.1
+smbus2>=0.4.3
