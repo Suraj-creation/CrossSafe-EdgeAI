@@ -76,7 +76,7 @@ def train(args):
 
 def main():
     parser = argparse.ArgumentParser(description="Train YOLOv8n LP Localiser")
-    parser.add_argument("--model", default="yolov8n.pt")
+    parser.add_argument("--model", default="models/yolov8n.pt")
     parser.add_argument("--data", default="datasets/merged_lp_localise/data.yaml")
     parser.add_argument("--epochs", type=int, default=200)
     parser.add_argument("--imgsz", type=int, default=640)

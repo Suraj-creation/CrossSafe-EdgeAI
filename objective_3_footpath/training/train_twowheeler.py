@@ -87,7 +87,7 @@ def train(args):
 
 def main():
     parser = argparse.ArgumentParser(description="Train YOLOv8n Two-Wheeler Detector")
-    parser.add_argument("--model", default="yolov8n.pt", help="Base model")
+    parser.add_argument("--model", default="models/yolov8n.pt", help="Base model")
     parser.add_argument("--data", default="datasets/merged_twowheeler/data.yaml")
     parser.add_argument("--epochs", type=int, default=120)
     parser.add_argument("--imgsz", type=int, default=640)

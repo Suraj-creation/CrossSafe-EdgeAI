@@ -267,6 +267,19 @@ Use **`scripts/evaluate_pipeline.py`** and the acceptance tables in:
 
 ---
 
+## Version control note (what is on GitHub)
+
+To avoid multi‑gigabyte clones and GitHub file limits, **`.gitignore` excludes**:
+
+- `objective_3_footpath/runs/` (Ultralytics training outputs)
+- **Merged dataset images and YOLO label folders** under `datasets/merged_*` (regenerate with `scripts/prepare_training_data.py`)
+- **`datasets/synthetic_plates/images/`** (regenerate with `scripts/generate_synthetic_plates.py`)
+- Local **`evidence/`** and **`logs/*.log`**
+
+Tracked assets include **source code**, **configs**, **`data.yaml`**, **synthetic `labels.txt`**, **`models/yolov8n.pt`**, guides, and this README. For full image datasets, use **Git LFS** or an external artifact bucket if you need them in remote storage.
+
+---
+
 ## License
 
 Specify your license in a `LICENSE` file (e.g. MIT, Apache-2.0) when you finalize distribution.
